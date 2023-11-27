@@ -36,9 +36,13 @@ Swallows = Team.new('Swallows', 41, 69, 10)
 
 
 # インスタンスの使用
-print Giants.show_team_result
-print Tigers.show_team_result
-print Dragons.show_team_result
-print BayStars.show_team_result
-print Carp.show_team_result
-print Swallows.show_team_result
+Giants.show_team_result
+Tigers.show_team_result
+Dragons.show_team_result
+BayStars.show_team_result
+Carp.show_team_result
+Swallows.show_team_result
+# put Swallows.show_team_resultだと、空行が出来てしまう
+# puts puts "xxx" という処理になってしまう
+# puts は実行結果が正しく動作する場合 nil を返します。
+# puts はコンソールの出力では nil を 空行 とみなしてしまうため、1行余分な空行が入ることになります。
